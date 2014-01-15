@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.betterwithlasers.dashcam.views;
+package com.example;
 
 import android.content.Context;
 import android.content.Intent;

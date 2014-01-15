@@ -1,4 +1,4 @@
-package com.betterwithlasers.dashcam.views;/*
+package com.example;/*
  * Copyright (C) 2013 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Xml;
 
-import com.betterwithlasers.dashcam.util.VideoUtils;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlSerializer;
@@ -90,6 +89,7 @@ import java.util.Map;
  * @hide
  */
 public class FilteredActivityChooserModel extends DataSetObservable {
+    public static final String YOUTUBE_PACKAGE = "com.google.android.youtube";
 
     /**
      * Client that utilizes an {@link FilteredActivityChooserModel}.
@@ -708,7 +708,7 @@ public class FilteredActivityChooserModel extends DataSetObservable {
             for (int i = 0; i < resolveInfoCount; i++) {
                 ResolveInfo resolveInfo = resolveInfos.get(i);
                 // Filter out the YouTube package from the suggestions list
-                if (!resolveInfo.activityInfo.packageName.equals(VideoUtils.YOUTUBE_PACKAGE)) {
+                if (!resolveInfo.activityInfo.packageName.equals(YOUTUBE_PACKAGE)) {
                     mActivities.add(new ActivityResolveInfo(resolveInfo));
                 }
             }
