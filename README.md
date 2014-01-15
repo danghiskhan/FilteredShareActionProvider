@@ -1,0 +1,1 @@
+Example of how to modify the ShareActionProvider implementation to filter out unwanted applications from the suggestions list. The only change is in FilteredActivityChooserModel.loadActivitiesIfNeeded. Copy these three classes into your project and reference the ActionProvider as normal com.example.FilteredShareActionProvider.
