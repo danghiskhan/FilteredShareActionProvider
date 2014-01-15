@@ -36,7 +36,7 @@ import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 import android.support.v4.view.ActionProvider;
 import android.support.v7.appcompat.R;
-import com.betterwithlasers.dashcam.views.FilteredActivityChooserModel;
+import com.example.FilteredActivityChooserModel;
 import android.support.v7.internal.widget.ActivityChooserView;
 import android.util.TypedValue;
 import android.view.Menu;
@@ -44,7 +44,7 @@ import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.SubMenu;
 import android.view.View;
-import com.betterwithlasers.dashcam.views.FilteredActivityChooserModel.OnChooseActivityListener;
+import com.example.FilteredActivityChooserModel.OnChooseActivityListener;
 
 /**
  * This is a provider for a share action. It is responsible for creating views
